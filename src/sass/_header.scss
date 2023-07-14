@@ -1,92 +1,227 @@
 .header {
-    padding-top: 20px;
-    padding-bottom: 20px;
+	padding-top: 22px;
+	padding-bottom: 17px;
 
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 
-    min-height: 90px;
-    background-color: #fff;
+	min-height: 90px;
+	background-color: #fff;
 
-    border-bottom: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
 }
 
 .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .header__logo {
 }
 .logo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
 .logo__img {
-    height: 24px;
-    width: auto;
+	height: 24px;
+	width: auto;
 }
 .logo__descr {
-    font-size: 14px;
-    font-weight: 500;
+	font-size: 14px;
+	font-weight: 500;
 }
 .header__nav {
 }
 .nav {
 }
 .nav__list {
-    display: flex;    
-    gap: 35px;
+	display: flex;    
+	gap: 35px;
 }
 .nav__item {
+	position: relative;
+	overflow: hidden;
+
+	&:hover {
+		&::before {
+			width: 100%;
+		}
+	}
+	
+	&.toggle {
+		overflow: visible;
+	}
+
+	&::before {
+		position: absolute;
+		content: '';
+		bottom: 0;
+
+		height: 2px;
+		width: 0;
+
+		transition: width .25s;
+		background-color: var(--color-01);
+	}
 }
 .nav__link {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 600;
+	position: relative;
+	display: block;
+	padding: 5px 0 2px;
+
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 600;
+
+	overflow: hidden;
 }
+.nav__link--down {
+	position: relative;
+	padding-right: 16px;
+	
+	
+	&::after {
+		position: absolute;
+		content: '';
+		top: 50%;
+		right: 0;
+
+		transform: translateY(-50%);
+		
+		width: 13px;
+		height: 13px;
+		
+		background-image: url('../img/arrow-down.svg');
+		background-size: cover;
+		background-position: center;
+	}
+
+	&.toggle {		
+		& ~ .submenu {
+			display: block;
+		}		
+	}
+}
+
 .nav__submenu {
 }
 .submenu {
-    display: none;
+	display: none;
+
+	position: absolute;
+	z-index: 20;
+	top: 75px;
+	
+	// margin-top: 75px;
+	left: 50%;
+	
+	padding: 35px;
+	width: 340px;
+	
+	background-color: #fff;
+	
+	transform: translateX(-50%);
+
+	&::after {
+		position: absolute;
+		content: '';
+		top: -10px;
+		left: 50%;
+
+		transform: translateX(-50%) rotate(45deg);
+
+		height: 40px;
+		width: 40px;
+		background-color: #fff;
+	}
 }
 .submenu__item {
+	&:not(:last-child) {
+		margin-bottom: 8px;
+	}
 }
 .submenu__link {
+	position: relative;
+	padding: 5px 0;
+	display: inline-flex;
+
+	line-height: 1.2;
+
+	transition: left .25s, color .25s;
+	overflow: hidden;
+
+	&:hover {
+		color: var(--color-01);
+	}
+
+	&:hover {
+		&::before {
+			left: 0;
+		}
+	}
+
+	&::before {
+		position: absolute;
+		content: '';
+		left: -100%;
+		bottom: 3px;
+
+		height: 2px;
+		width: 100%;
+
+		transition: left .25s;
+		background-color: var(--color-01);
+	}
 }
 .header__contacts {
 }
 .header-contacts {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+	display: flex;
+	align-items: center;
+	gap: 50px;
 }
 .header-contacts__socials {
 }
 .socials {
-    display: flex;
-    gap: 9px;
+	position: relative;
+	display: flex;
+	gap: 9px;
+
+	&::after {
+		position: absolute;
+		content: '';
+		right: -27px;
+		top: 50%;
+		transform: translateY(-50%);
+
+		height: 50px;
+		width: 1px;
+		background-color: #E0E0E0;
+	}
 }
 .socials__item {
-    img {
-        display: block;
-        height: 32px;
-        width: auto;
-    }
+	img {
+		display: block;
+		height: 32px;
+		width: auto;
+	}
 }
 .header-contacts__info {
 }
 .contacts-info {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
 .contacts-info__phone {
-    font-size: 20px;
-    font-weight: 600;
+	margin-top: 5px;
+	margin-bottom: -7px;
+	font-size: 20px;
+	font-weight: 600;
 }
 .contacts-info__mail {
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--color-02);    
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--color-02);    
 }

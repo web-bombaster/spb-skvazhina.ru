@@ -1,0 +1,39 @@
+.b02 {
+    @include block;
+}
+.b02__container {
+}
+.container {
+}
+.b02__title {
+    max-width: 780px;
+}
+.b-title {
+    @include block-header;
+}
+.b02__box {
+    display: flex;
+    gap: 72px;
+    align-items: center;
+}
+.b02__img {
+    border-radius: var(--brs);    
+}
+.b02__adv {
+}
+.b02-adv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 113px 107px;
+}
+.b02-adv__item {
+}
+.b02-adv__title {
+    margin-bottom: 10px;
+    
+    @include f_22_600;
+}
+.b02-adv__descr {
+    font-size: 18px;
+    line-height: 1.5;
+}

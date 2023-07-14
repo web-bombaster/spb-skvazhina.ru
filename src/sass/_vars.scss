@@ -16,12 +16,14 @@ $break_xxs: 330px;
     --color-text: #333;
     --color-01: #28579A;
     --color-02: #828282;
+    --color-03: #f5f5f5;
+    --color-04: #464646;
 
     // Шрифты
     --font-family: 'Gilroy', sans-serif;
 
     // Скругления
-    --brs6: .6rem;
+    --brs: .5rem;
 
     // Размеры
     --mainGap: 20px;
@@ -29,9 +31,19 @@ $break_xxs: 330px;
         --mainGap: 10px;
     }
 
-    --indentBlocks: 4.8rem;
+    --block-pt: 10rem;
+    @media (max-width: $break_md) {
+        --block-pt: 6rem;
+    }
+
+    --block-pb: 14rem;
+    @media (max-width: $break_md) {
+        --block-pb: 10rem;
+    }
+
+    --block-indent: 10rem;
     @media (max-width: $break_lg) {
-        --indentBlocks: 4rem;
+        --indentBlocks: 6rem;
     }
 
     --heroMinCol: calc(100% / 5 - 3 / 4 * var(--mainGap));

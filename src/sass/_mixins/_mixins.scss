@@ -1,5 +1,51 @@
-@use "sass:math";
+// Убираем margin-top у первого дочернего элемента и margin-bottom у последнего
+@mixin block {
+	padding-top: var(--block-pt);
+	padding-bottom: var(--block-pb);
+}
 
-@mixin pix-to-rem($px) {
-    font-size: math.div($px, $font-size-default) * 1rem;
+@mixin block-header {
+	margin-bottom: 50px;
+	max-width: 780px;
+	
+	font-size: 45px;
+	font-weight: 600;
+	line-height: 1.26;
+}
+
+@mixin bg_blue {
+	color: #fff;
+	background-color: #0D2952;
+}
+
+@mixin f_24_600 {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.22;
+}
+
+@mixin f_22_600 {
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 1.22;
+}
+
+@mixin resetFirstLastMargin {
+	& > * {
+		&:first-child {
+			margin-top: 0;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@mixin before_wh100 {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
