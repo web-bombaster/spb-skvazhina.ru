@@ -27,23 +27,23 @@ $break_xxs: 330px;
 
     // Размеры
     --mainGap: 20px;
+    --block-pt: 10rem;
+    --block-pb: 14rem;
+    --block-indent: 10rem;
+    
     @media (max-width: $break_lg) {
+        --indentBlocks: 6rem;
         --mainGap: 10px;
     }
 
-    --block-pt: 10rem;
     @media (max-width: $break_md) {
         --block-pt: 6rem;
-    }
-
-    --block-pb: 14rem;
-    @media (max-width: $break_md) {
         --block-pb: 10rem;
     }
 
-    --block-indent: 10rem;
-    @media (max-width: $break_lg) {
-        --indentBlocks: 6rem;
+    @media (max-width: $break_sm) {
+        --block-pt: 4rem;
+        --block-pb: 8rem;
     }
 
     --heroMinCol: calc(100% / 5 - 3 / 4 * var(--mainGap));

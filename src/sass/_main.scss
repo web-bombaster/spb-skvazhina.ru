@@ -27,7 +27,7 @@ body {
 	display: flex;
 	flex-direction: column;
 
-	min-width: 32rem;
+	// min-width: 32rem;
 	min-height: 100vh;
 	overflow-x: hidden;
 
@@ -111,6 +111,14 @@ ul:not([class]) {
 	overflow: hidden;
 }
 
+.pt {
+	padding-top: 0;
+}
+
+.pb {
+	padding-bottom: 0;
+}
+
 .main {
 	position: relative;
 	z-index: 16;
@@ -119,6 +127,10 @@ ul:not([class]) {
 .content {
 	margin-top: 5rem;
 	margin-bottom: 5rem;
+}
+
+.b-title {
+    @include block-header;
 }
 
 .section-header {
@@ -200,21 +212,21 @@ h3:not([class]) {
 
 .swiper__prev, .swiper__next {
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	height: 4.2rem;
-	width: 4.2rem;
-	border-radius: 50%;
-	background-color: rgba(254, 254, 254, 0.9);
+	top: -95px;
+	height: 4rem;
+	width: 4rem;
 
-	background-image: url('../img/icons/arrow.svg');
-	background-repeat: no-repeat;
+	background-image: url('../img/arrow-slider.svg');
+	background-size: cover;
 	background-position: center;
-
-	box-shadow: rem rem .3rem rem #b3b3b3;
 
 	z-index: 1;
 	cursor: pointer;
+
+	@media screen and (max-width: $break_md) {
+		top: initial;
+		bottom: 0;
+	}
 
 	@media screen and (max-width: $break_sm) {
 		height: 3.2rem;
@@ -223,29 +235,20 @@ h3:not([class]) {
 }
 
 .swiper__prev {
-	left: calc(-4.2rem - 1.5rem);
-	transform: translateY(-50%) rotate(180deg);
+	right: 50px;
+	transform: rotate(180deg);
 
-	@media screen and (max-width: 120rem) {
-		left: -1.5rem;
+	@media screen and (max-width: $break_md) {
+		right: initial;
 	}
 }
 
 .swiper__next {
-	right: calc(-4.2rem - 1.5rem);
-
-	@media screen and (max-width: 120rem) {
-		right: -1.5rem;
+	right: 0;
+	@media screen and (max-width: $break_md) {
+		right: initial;
+		left: 40px;
 	}
-}
-
-.swiper-button-disabled {
-	opacity: .5;
-	cursor: auto;
-}
-
-.swiper-pagination-bullet-active {
-	background-color: var(--color-main) !important;
 }
 
 // Страница показа верстки

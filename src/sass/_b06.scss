@@ -1,0 +1,57 @@
+.b06 {
+    @include block;
+}
+.b06__container {
+}
+
+.b06__box {
+}
+.b06-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    align-items: center;
+
+    @media screen and (max-width: 992px) {
+        gap: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+.b06-box__left {
+    flex-basis: 50%;
+
+    font-size: 18px;
+}
+.b06__title {
+    margin-bottom: 20px;
+    flex-basis: 50%;
+}
+
+
+
+.b06-box__right {
+    @media screen and (max-width: $break_sm) {
+        width: 40%;
+        align-self: flex-start;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+
+    img {
+        border-radius: var(--brs);
+        @media screen and (max-width: $break_sm) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 600px) {
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

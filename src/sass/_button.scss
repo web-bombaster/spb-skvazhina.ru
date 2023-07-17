@@ -29,27 +29,11 @@
 }
 
 .btn:focus {
-	background-color: #A3DA37;
+	background-color: darken(#28579A, .1);
 }
 
 .btn:disabled {
 	opacity: 0.4;
-}
-
-.btn--orange {
-	background-color: #FF7043;
-
-	&:hover:not(:disabled) {
-		background-color: #A3DA37;
-	}
-}
-
-.btn--grren {
-	background-color: #A3DA37;
-
-	&:hover:not(:disabled) {
-		background-color: #FF7043;
-	}
 }
 
 .btn-arrow {

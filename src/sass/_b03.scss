@@ -19,6 +19,33 @@
 		"b c e"
 	;
 	gap: 20px;
+
+	@media screen and (max-width: $break_md) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas:
+		"a c"
+		"b c"
+		"d e"
+	;
+	}
+
+	@media screen and (max-width: 600px) {
+		gap: 10px;
+	}
+
+	@media screen and (max-width: $break_xs) {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+		"c"
+		"c"
+		"a"
+		"b"
+		"d"
+		"e"
+	;	
+	}
 }
 .b03__item {
 	position: relative;
@@ -38,6 +65,11 @@
 	background-position: center;
 
 	transition: background .25s, background-position .25s;
+
+	@media screen and (max-width: 600px) {
+		padding: 24px;
+		min-height: 200px;
+	}
 
 	&::before {
 		@include before_wh100;

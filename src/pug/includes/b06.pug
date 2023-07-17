@@ -1,0 +1,24 @@
+.b06
+	.b06__container.container
+		.b06__box.b06-box
+			.b06-box__left
+				h2.b06__title.b-title У вас остались вопросы?
+				p Оставьте заявку на беслатную консультацию и наши специалисты свяжутся с вами в течении 15 минут
+
+				form(action="#" method="post").help__form.form
+					.input-wrapper
+						input.form__name(type='text' name='name' placeholder='Имя')
+
+					.input-wrapper
+						input.form__phone(type='tel' name='phone' placeholder='Номер телефона')
+
+					button.form__btn.btn(type='submit') Отправить
+
+					.input-wrapper.agreement
+						label(for='agreement').agreement__label
+							input#agreement.form__agreement(name='agreement' type='checkbox' required='' checked='')
+							| Я принимаю условия&nbsp;
+							a(href='#') политики конфиденцианольности
+
+			.b06-box__right
+				img(src="../../img/content/b06.jpg", alt="")

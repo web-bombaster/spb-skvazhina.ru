@@ -11,6 +11,16 @@
 	font-size: 45px;
 	font-weight: 600;
 	line-height: 1.26;
+
+	@media screen and (max-width: 992px) {
+		margin-bottom: 30px;
+		font-size: 32px;
+	}
+
+	@media screen and (max-width: 768px) {
+		margin-bottom: 20px;
+		font-size: 26px;
+	}
 }
 
 @mixin bg_blue {
@@ -22,12 +32,20 @@
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 1.22;
+
+	@media screen and (max-width: $break_md) {
+		font-size: 22px;
+	}
 }
 
 @mixin f_22_600 {
 	font-size: 22px;
 	font-weight: 600;
 	line-height: 1.22;
+
+	@media screen and (max-width: 768px) {
+		font-size: 19px;
+	}
 }
 
 @mixin resetFirstLastMargin {

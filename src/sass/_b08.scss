@@ -1,0 +1,64 @@
+.b08 {
+    @include block;
+    padding-top: 0;
+
+    .swiper.b08-slider {
+        overflow: visible;
+    }
+}
+.b08__container {
+}
+.container {
+}
+.b08__title {
+}
+.b-title {
+}
+.b08__slider {
+    @media screen and (max-width: $break_md) {
+        padding-bottom: 50px;
+    }
+}
+.b08-slider {
+}
+.b08-slider__wrapper {
+}
+.b08-slider__item {
+    &.swiper-slide {
+        width: auto;
+    }
+}
+.b08-slider__img {
+    height: 431px;
+    width: auto;
+
+    @media screen and (max-width: $break_md) {
+        height: 360px;
+    }
+
+    @media screen and (max-width: $break_sm) {
+        height: 280px;
+    }
+
+    @media screen and (max-width: $break_sm) {
+        height: 240px;
+    }
+}
+// .b08-slider__next, .b08-slider__prev {
+//     position: absolute;
+//     top: 0;
+
+//     display: block;
+//     width: 40px;
+//     height: 40px;
+//     background-size: cover;
+//     background-position: center;
+
+//     background-image: url('../img/arrow-slider.svg');
+// }
+// .b08 .b08-slider__prev {
+//     right: 50px;
+// }
+// .b08 .b08-slider__next {
+//     right: 0;
+// }

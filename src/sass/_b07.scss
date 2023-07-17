@@ -1,0 +1,83 @@
+.b07 {
+    @include block;
+    padding-top: 0;
+}
+.b07__container {
+}
+
+.b07__box {
+}
+.b07-box {
+}
+.b07-box__item {
+}
+.b07-item {
+    position: relative;
+    left: 50%;
+
+    min-height: 160px;
+
+    @media screen and (max-width: $break_sm) {
+        left: 30%;
+    }
+
+    @media screen and (max-width: $break_xs) {
+        left: 0;
+    }
+
+    &:nth-child(even) {
+        left: 0;
+    }
+}
+.b07-item__box {
+    padding-top: 65px;
+    padding-left: 110px;
+
+    width: 100%;
+    max-width: 450px;
+
+    @media screen and (max-width: $break_md) {
+        max-width: 50%;
+    }
+
+    @media screen and (max-width: $break_sm) {
+        max-width: 70%;
+    }
+
+    @media screen and (max-width: $break_xs) {
+        max-width: 100%;
+        padding-top: 50px;
+        padding-left: 80px;
+    }
+}
+.b07-item__digit {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    font-size: 200px;
+    font-weight: 700;
+    color: rgba(230,230,230,.7);
+    line-height: 1;
+
+    opacity: .6;
+
+    @media screen and (max-width: $break_md) {
+        font-size: 160px;
+    }
+
+    @media screen and (max-width: $break_md) {
+        font-size: 120px;
+    }
+
+    @media screen and (max-width: $break_xs) {
+        font-size: 90px;
+    }
+}
+.b07-item__title {
+    @include f_22_600;
+    margin-bottom: 10px;
+}
+.b07-item__descr {
+}

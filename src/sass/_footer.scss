@@ -1,0 +1,103 @@
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff;
+    background-color: #333333;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $break_md) {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+        text-align: center;
+    }
+}
+.footer__left {
+}
+.footer__logo {
+    height: 40px;
+}
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    font-size: 24px;
+    font-weight: 500;
+
+    @media screen and (max-width: $break_md) {
+        align-items: center;
+    }
+
+    @media (max-width: $break_sm) {
+        font-size: 16px;
+
+        gap: 8px;
+    }
+}
+.footer__phone {
+    padding-left: 55px;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    background-image: url('../img/icons/footer/phone.png');
+    background-position: 0px 6px;
+    background-size: 45px 49px;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: $break_sm) {
+        font-size: 32px;
+        background-size: 23px 25px;
+        background-position: 0px 9px;
+        padding-left: 35px;
+    }
+}
+.footer__mail {
+    padding-left: 45px;
+
+    background-image: url('../img/icons/footer/mail.png');
+    background-position: 0px 4px;
+    background-size: 35px 28px;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: $break_sm) {
+        padding-left: 25px;
+        background-size: 16px 14px;
+    }
+}
+.footer__whatsapp {
+    padding-left: 40px;
+
+    background-image: url('../img/icons/footer/wa.png');
+    background-position: 0px 2px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: $break_sm) {
+        padding-left: 24px;
+        background-size: 15px 15px;
+    }
+}
+.footer__telegram {
+    padding-left: 40px;
+
+    background-image: url('../img/icons/footer/telegram.png');
+    background-position: 0px 2px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: $break_sm) {
+        padding-left: 24px;
+        background-size: 15px 15px;
+    }
+}

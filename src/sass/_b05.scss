@@ -20,13 +20,26 @@
 	margin-top: 1px;
 	position: relative;
 
-	padding: 43px 32px 32px;
+	padding: 43px 32px 85px;
 
 	flex-grow: 1;
 	width: calc(100% / 3);
 	min-height: 280px;	
 
 	outline: 1px solid #183560;
+
+	@media screen and (max-width: $break_md) {
+		width: calc(100% / 2);
+	}
+
+	@media screen and (max-width: $break_sm) {
+		width: 100%;
+		min-height: 200px;
+	}
+
+	@media screen and (max-width: $break_xs) {
+		padding: 24px 24px 85px;
+	}
 
 	&::before {
 		position: absolute;
@@ -40,6 +53,10 @@
 		color: #647DA0;
 		font-size: 20px;
 		font-weight: 600;
+
+		@media screen and (max-width: $break_xs) {
+			left: 24px;
+		}
 	}
 
 	&:nth-child(-n+9)::before {
