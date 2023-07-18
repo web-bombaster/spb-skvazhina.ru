@@ -1,7 +1,12 @@
 header.header
 	.container.header__container
+		button.mobile-menu-btn.burger__menu-btn.js-burger.jsMobileMenuBtnToggle
+			span
 		a(href="").header__logo.logo
-			img(src="../../img/logo.png", alt="").logo__img
+			//- img(src="../../img/logo.png", alt="").logo__img
+			picture.logo__img
+				source(media='(max-width: 768px)' srcset='../../img/logo-mobile.png')
+				img(src='../../img/logo.png' alt='')
 			.logo__descr бурение скважин в Санкт-Петербурге
 		nav.header__nav.nav
 			ul.nav__list
