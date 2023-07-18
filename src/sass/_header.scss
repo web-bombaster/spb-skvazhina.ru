@@ -72,9 +72,18 @@
 }
 .nav {
 }
-.nav__list {
-	display: flex;    
+.nav__list {	
+	display: flex;
 	gap: 35px;
+	
+	@media screen and (max-width: $break_lg) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		width: 100%;
+		flex-direction: column;
+		gap: 20px;
+	}
 }
 .nav__item {
 	position: relative;
@@ -115,8 +124,7 @@
 }
 .nav__link--down {
 	position: relative;
-	padding-right: 16px;
-	
+	padding-right: 16px;	
 	
 	&::after {
 		position: absolute;
@@ -160,6 +168,14 @@
 	
 	transform: translateX(-50%);
 
+	@media screen and (max-width: $break_lg) {
+		padding: 16px 0 0;
+
+		position: relative;
+		width: 100%;
+		top: 0;
+	}
+
 	&::after {
 		position: absolute;
 		content: '';
@@ -171,6 +187,10 @@
 		height: 40px;
 		width: 40px;
 		background-color: #fff;
+
+		@media screen and (max-width: $break_lg) {
+			display: none;
+		}
 	}
 }
 .submenu__item {
@@ -187,6 +207,8 @@
 
 	transition: left .25s, color .25s;
 	overflow: hidden;
+
+	
 
 	&:hover {
 		color: var(--color-01);

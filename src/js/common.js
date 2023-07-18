@@ -3,12 +3,13 @@ document.addEventListener(
 	"DOMContentLoaded", () => {
 		// include './myscripts/menu.js'
 		// include './myscripts/header.js'
-		// -include './myscripts/preloader.js'
+		// include './myscripts/moving.js'
 		// include './myscripts/burger.js'
-		// include './myscripts/mobile-menu.js'
+		// include './myscripts/mobileMenuPanel.js'
 		// include './myscripts/form.js'
-		// -include './myscripts/accordeon.js'
 		// include './myscripts/initSwiper.js'
+		// -include './myscripts/accordeon.js'
 		// -include './myscripts/blazy-init.js'
+		// -include './myscripts/preloader.js'
 	}
 );

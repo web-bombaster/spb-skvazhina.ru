@@ -4,11 +4,14 @@
 
 
 let subMenuOpen  = function() {
+	let menu = document.querySelector('.nav__list');
 	let elem = document.querySelector('.nav__link--down');
+
 	if (!elem) {
 		return;
 	};
 
+	// Закрываем все открытые подменю
 	let subMenuClose  = function() {
 		let elem = document.querySelector('.nav__link--down.toggle');
 
@@ -21,23 +24,28 @@ let subMenuOpen  = function() {
 		};
 	};
 
-	let menu = document.querySelector('.nav__list');
+	// По наведению сначала закрываем все подменю, потом открываем наведенное подменю 
 	menu.addEventListener('mouseover', function(e) {
 		if (e.target.classList.contains('nav__link--down')) {
 			subMenuClose();
 			e.target.classList.add('toggle');
 			e.target.parentElement.classList.add('toggle');
-		};
-
-		menu.addEventListener('mouseout', function() {
-			
-		});
-		
+		};		
 	});
-
-
-
-
+	
+	
+	// Закрыть подменю через пару секунд после ухода ховера с него 
+	// menu.addEventListener('mouseout', subMenuClose);	
+	menu.addEventListener('mouseout', function(e) {
+		
+		let childEl = e.target;
+		console.log(childEl);
+		
+		// if (menu.contains.e.target) {
+		// 	console.log(0);
+		// }
+		// setTimeout(subMenuClose, 10000);
+	});
 
 };
 
