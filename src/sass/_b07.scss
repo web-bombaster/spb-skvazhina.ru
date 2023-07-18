@@ -14,15 +14,18 @@
 .b07-item {
     position: relative;
     left: 50%;
+    width: 50%;
 
     min-height: 160px;
 
     @media screen and (max-width: $break_sm) {
         left: 30%;
+        width: 70%;
     }
 
     @media screen and (max-width: $break_xs) {
         left: 0;
+        width: 100%;
     }
 
     &:nth-child(even) {
@@ -37,11 +40,11 @@
     max-width: 450px;
 
     @media screen and (max-width: $break_md) {
-        max-width: 50%;
+        // max-width: 50%;
     }
 
     @media screen and (max-width: $break_sm) {
-        max-width: 70%;
+        // max-width: 70%;
     }
 
     @media screen and (max-width: $break_xs) {

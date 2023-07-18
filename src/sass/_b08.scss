@@ -1,6 +1,7 @@
 .b08 {
     @include block;
     padding-top: 0;
+    overflow: hidden;
 
     .swiper.b08-slider {
         overflow: visible;
