@@ -1,52 +1,36 @@
-// document.addEventListener('mouseover', function(e) {
-// 	console.log(e.target);
-// });
+let toggleMobileSubmenu = function () {
+	// Если есть хоть один элемент
+	if (document.querySelector('.nav__link--down')) {
+		// if (document.documentElement.clientWidth <= 1200) {
 
+		// Если мобильный режим
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+			//Выбираем все нужные ссылки
+			let navLinksDown = document.querySelectorAll('.nav__link--down');
+			navLinksDown.forEach(function(element) {
+				// Отслеживаем по ним клик, отменяем стандартное действие
+				element.addEventListener('click', function(e) {
+					e.preventDefault();
+					// navLinksDown.forEach(function(element) {
+					// 	element.classList.remove('toggle');
+					// 	e.target.classList.toggle('toggle');
+					// });
 
-let subMenuOpen  = function() {
-	let menu = document.querySelector('.nav__list');
-	let elem = document.querySelector('.nav__link--down');
+					let parentEl = e.target.parentElement;
 
-	if (!elem) {
-		return;
-	};
+					// Задаем нужные классы
+					e.target.classList.toggle('toggle');
+					parentEl.classList.toggle('toggle');
 
-	// Закрываем все открытые подменю
-	let subMenuClose  = function() {
-		let elem = document.querySelector('.nav__link--down.toggle');
-
-		if (elem) {
-			let elems = document.querySelectorAll('.nav__link--down.toggle');
-			
-			elems.forEach(function(element) {
-				element.classList.remove('toggle');
+					if (!e.target.classList.contains('toggle')) {
+						e.target.nextElementSibling.classList.add('toggle');
+					} else {
+						e.target.nextElementSibling.classList.remove('toggle');
+					};
+				});
 			});
 		};
 	};
-
-	// По наведению сначала закрываем все подменю, потом открываем наведенное подменю 
-	menu.addEventListener('mouseover', function(e) {
-		if (e.target.classList.contains('nav__link--down')) {
-			subMenuClose();
-			e.target.classList.add('toggle');
-			e.target.parentElement.classList.add('toggle');
-		};		
-	});
-	
-	
-	// Закрыть подменю через пару секунд после ухода ховера с него 
-	// menu.addEventListener('mouseout', subMenuClose);	
-	menu.addEventListener('mouseout', function(e) {
-		
-		let childEl = e.target;
-		console.log(childEl);
-		
-		// if (menu.contains.e.target) {
-		// 	console.log(0);
-		// }
-		// setTimeout(subMenuClose, 10000);
-	});
-
 };
 
-subMenuOpen();
+toggleMobileSubmenu();
