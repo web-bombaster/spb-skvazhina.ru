@@ -1,26 +1,24 @@
 .breadcrumbs {
-	margin-top: 41px;
+	margin-bottom: 17px;
 	font-size: 14px;
-	color: #858585;
+	font-weight: 500;
+	color: #fff;
 
 	@media screen and (max-width: $break_md) {
 		font-size: 13px;
 	}
 
 	@media screen and (max-width: $break_sm) {
-		margin-top: 20px;
+		margin-bottom: 8px;
 	}
 
 	a, a span {
-		color: #858585;
+		color: #fff;
 		text-decoration: none;
 	}
 
 	a:not([class]) {
 		text-decoration: none;
 	}
-
-	span {
-		color: #2c2c2c;
-	}
+	
 }

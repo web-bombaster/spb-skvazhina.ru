@@ -105,13 +105,18 @@ ul:not([class]) {
 	z-index: 16;
 }
 
-.content {
-	margin-top: 5rem;
-	margin-bottom: 5rem;
+h2, .b-title {
+    @include block-header;
 }
 
 .b-title {
-    @include block-header;
+	margin-top: 0;
+}
+
+h3 {
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 1.26;
 }
 
 .section-header {
@@ -146,47 +151,6 @@ ul:not([class]) {
 		font-size: 1.8rem;
 	}
 }
-
-
-
-h3:not([class]) {
-	margin-top: 4rem;
-	margin-bottom: 1.5rem;
-
-	font-family: 'Raleway', sans-serif;
-	font-size: 3.2rem;
-	font-weight: 600;
-	line-height: 1.18;
-}
-
-.hidden-text {
-	@media screen and (max-width: $break_sm) {
-		display: none;
-
-		&.active {
-			display: block;
-		}
-	}
-}
-
-.show-text {
-	display: none;
-
-	margin-top: 1.6rem;
-	margin-bottom: 1.6rem;
-	padding: 0;
-
-	text-decoration: underline;
-	color: var(--color-main);
-
-	border: none;
-	background-color: transparent;
-
-	@media screen and (max-width: $break_sm) {
-		display: inline-block;
-	}
-}
-
 
 
 // Страница показа верстки

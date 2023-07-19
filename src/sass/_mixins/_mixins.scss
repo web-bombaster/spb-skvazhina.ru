@@ -23,6 +23,30 @@
 	}
 }
 
+@mixin contentHeaderTitle {
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: 70%;
+	
+	font-size: 60px;
+	font-weight: 600;
+	line-height: 1.26;
+
+	@media screen and (max-width: $break_lg) {
+		max-width: 80%;
+		font-size: 50px;
+	}
+
+	@media screen and (max-width: $break_md) {
+		font-size: 36px;
+	}
+
+	@media screen and (max-width: $break_sm) {
+		max-width: 100%;
+		font-size: 28px;
+	}
+}
+
 @mixin bg_blue {
 	color: #fff;
 	background-color: #0D2952;
@@ -57,8 +81,6 @@
 		font-size: 22px;
 	}
 }
-
-
 
 @mixin resetFirstLastMargin {
 	& > * {

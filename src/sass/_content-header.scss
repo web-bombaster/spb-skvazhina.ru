@@ -1,0 +1,30 @@
+.content-header {
+    margin-bottom: 70px;
+    padding-top: 100px;
+    padding-bottom: 140px;
+
+    color: #fff;
+    background-color: #0d2952;
+
+    background-image: url('../img/content/content-header.jpg');
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (max-width: $break_lg) {
+        padding-bottom: 100px;
+    }
+
+    @media screen and (max-width: $break_sm) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+.content-header__container {
+}
+.container {
+}
+.breadcrumbs {
+}
+.content-header__title {
+    @include contentHeaderTitle;
+}

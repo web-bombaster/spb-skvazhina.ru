@@ -13,7 +13,7 @@
 // @import "_fonts";
 
 // Стандартности
-// @import '_breadcrumbs'; // Постраничная навигация
+@import '_breadcrumbs'; // Постраничная навигация
 @import '_button'; // Кнопки
 
 // Свои общие стили
@@ -22,6 +22,9 @@
 @import "_burger";
 @import "_menu";
 @import "_header";
+@import "_content-header";
+@import "_content";
+@import "_table";
 @import "_b01";
 @import "_b02";
 @import "_b03";
