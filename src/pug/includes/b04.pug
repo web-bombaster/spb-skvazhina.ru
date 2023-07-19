@@ -1,5 +1,159 @@
 .b04
 	.b04__container.container
-		h2.b04__title.b-title Рассчитайте стоимость бурения скважины за 2 минуты
+		//- h2.b04__title.b-title Рассчитайте стоимость бурения скважины за 2 минуты
 		.b04__box
-			
+			form(action="").quiz.form
+				.quiz__header.quiz-header
+					h3.quiz-header__title Рассчитайте стоимость бурения скважины за 2 минуты
+					.quiz-header__counter.quiz-counter
+						span.quiz-counter__current 1 
+						| &nbsp;/&nbsp;
+						span.quiz-counter__length 7 
+
+				.quiz__middle.quiz-slider
+
+					fieldset.quiz-slider__item.quiz-slide.quiz-slide--img
+						legend.quiz-slide__title Какая услуга вас интересует?
+
+						.quiz-slide__grid.quiz-grid
+
+							label.quiz-slide__item
+								input(type="radio" name="answer-01" value="Бурение скважины Под ключ").quiz-slide__radio
+								.quiz-slide__img
+									img(src="img/content/quiz/01.jpg", alt="")
+								| Бурение скважины Под ключ
+
+							label.quiz-slide__item
+								input(type="radio" name="answer-01" value="Простое бурение скважины").quiz-slide__radio
+								.quiz-slide__img
+									img(src="img/content/quiz/02.png", alt="")
+								| Простое бурение скважины
+
+							label.quiz-slide__item
+								input(type="radio" name="answer-01" value="Ремонт или промывка скважины").quiz-slide__radio
+								.quiz-slide__img
+									img(src="img/content/quiz/03.png", alt="")
+								| Ремонт или промывка скважины
+
+							label.quiz-slide__item
+								input(type="radio" name="answer-01" value="Обустройство скважины, подводка к дому").quiz-slide__radio
+								.quiz-slide__img
+									img(src="img/content/quiz/04.png", alt="")
+								| Обустройство скважины, подводка к дому
+
+
+					fieldset.quiz-slider__item.quiz-slide
+						legend.quiz-slide__title На участке имеется электричество?
+
+						label.quiz-slide__label.label-radio
+							input(type="radio" name="answer-02" value="Имеется, до 5 кВт.").quiz-slide__radio
+							| Имеется, до 5 кВт.
+
+						label.quiz-slide__label.label-radio
+							input(type="radio" name="answer-02" value="Имеется, свыше 5 кВт.").quiz-slide__radio
+							| Имеется, свыше 5 кВт.
+
+						label.quiz-slide__label.label-radio
+							input(type="radio" name="answer-02" value="Электричества нет.").quiz-slide__radio
+							| Электричества нет.
+
+						label.quiz-slide__label.label-radio
+							input(type="radio" name="answer-02" value="Затрудняюсь ответить").quiz-slide__radio
+							| Затрудняюсь ответить
+
+
+					fieldset.quiz-slider__item.quiz-slide
+						legend.quiz-slide__title Наличие источников технической воды вблизи места работы.
+
+						label.quiz-slide__label.label-radio
+							input(type="radio" name="answer-03" value="Канава").quiz-slide__radio
+							| Канава
+							
+						label.quiz-slide__label.label-radio
+							input(type="radio" name="answer-03" value="Пруд").quiz-slide__radio
+							| Пруд
+
+						label.quiz-slide__label.label-radio
+							input(type="radio" name="answer-03" value="Источника технической воды нет").quiz-slide__radio
+							| Источника технической воды нет
+
+						label.quiz-slide__label.label-radio
+							input(type="radio" name="answer-03" value="Речка").quiz-slide__radio
+							| Речка
+
+						label.quiz-slide__label.label-radio
+							input(type="radio" name="answer-03" value="Соседский колодец/скважина").quiz-slide__radio
+							| Соседский колодец/скважина
+
+						label.quiz-slide__label.label-radio
+							input(type="radio" name="answer-03" value="Затрудняюсь ответить").quiz-slide__radio
+							| Затрудняюсь ответить
+
+
+					fieldset.quiz-slider__item.quiz-slide
+						legend.quiz-slide__title Наличие источников технической воды вблизи места работы.
+
+						label.quiz-slide__label.label-checkbox
+							input(type="checkbox" name="answer-04-01" value="Затрудняюсь ответить").quiz-slide__checkbox
+							| Затрудняюсь ответить
+
+						label.quiz-slide__label.label-checkbox
+							input(type="checkbox" name="answer-04-02" value="Песок").quiz-slide__checkbox
+							| Песок
+
+						label.quiz-slide__label.label-checkbox
+							input(type="checkbox" name="answer-04-03" value="Известняк").quiz-slide__checkbox
+							| Известняк
+
+						label.quiz-slide__label.label-checkbox
+							input(type="checkbox" name="answer-04-04" value="Глина").quiz-slide__checkbox
+							| Глина
+
+						label.quiz-slide__label.label-checkbox
+							input(type="checkbox" name="answer-04-05" value="Бут").quiz-slide__checkbox
+							| Бут
+
+
+					fieldset.quiz-slider__item.quiz-slide
+						legend.quiz-slide__title Когда вы хотите приступить к работам?
+
+						label.quiz-slide__label.label-radio.toggle
+							input(type="radio" name="answer-05" value="В ближайшее время").quiz-slide__radio
+							| В ближайшее время
+
+						label.quiz-slide__label.label-radio
+							input(type="radio" name="answer-05" value="В течении месяца").quiz-slide__radio
+							| В течении месяца
+
+						label.quiz-slide__label.label-radio
+							input(type="radio" name="answer-05" value="В течении нескольких месяцев").quiz-slide__radio
+							| В течении нескольких месяцев
+
+						label.quiz-slide__label.label-radio
+							input(type="radio" name="answer-05" value="Пока не знаю").quiz-slide__radio
+							| Пока не знаю
+
+
+					fieldset.quiz-slider__item.quiz-slide
+						legend.quiz-slide__title Укажите ваш населенный пункт?
+
+						label.quiz-slide__label-text
+							| Не обязательно для заполнения
+						input(type="text" name="answer-06" placeholder="Название").quiz-slide__input
+
+
+					fieldset.quiz-slider__item.quiz-slide
+						legend.quiz-slide__title Сейчас мы проанализируем ваши ответы и сделаем примерный расчет стоимости. Ваша персональная скидка, будет закреплена за вашим номером телефона.
+
+						label.quiz-slide__label-text
+							| Введите имя
+						input(type="text" name="answer-07-01" placeholder="Имя").quiz-slide__input
+
+						label.quiz-slide__label-text
+							| Введите номер телефона
+						input(type="tel" name="answer-07-02" placeholder="Телефон").quiz-slide__input.form__phone
+
+
+				.quiz__footer.quiz-footer
+					.quiz__btn.quiz-btn.quiz-btn__prev.btn Назад
+					.quiz__btn.quiz-btn.quiz-btn__next.btn Вперед

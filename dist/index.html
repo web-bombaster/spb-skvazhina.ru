@@ -14,12 +14,304 @@
     <script src="js/scripts.min.js" defer></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Верстка сайта «Бурение скважин»:</h1>
-      <div class="index">
-        <p class="info">Если страничка отображается криво, обновляем ее через CTRL + F5!</p>
-        <p><a href="home.html" target="_blank">home - Главная страница</a></p>
-        <p><a href="service.html" target="_blank">home - Услуга - детальная страница</a></p>
+    <header class="header">
+      <div class="container header__container">
+        <button class="mobile-menu-btn burger__menu-btn js-burger jsMobileMenuBtnToggle"><span></span></button><a class="header__logo logo" href="">
+          <picture class="logo__img">
+            <source media="(max-width: 768px)" srcset="img/logo-mobile.png"><img src="img/logo.png" alt="">
+          </picture>
+          <div class="logo__descr">бурение скважин в Санкт-Петербурге</div></a>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link nav__link--down" href="#">Услуги</a>
+              <ul class="nav__submenu submenu">
+                <li class="submenu__item"><a class="submenu__link" href="#">Бурение скважины на песок</a></li>
+                <li class="submenu__item"><a class="submenu__link" href="#">Бурение артезианской скважины</a></li>
+                <li class="submenu__item"><a class="submenu__link" href="#">Бурение скважины «под ключ»</a></li>
+                <li class="submenu__item"><a class="submenu__link" href="#">Промывка (прочистка) скважины</a></li>
+                <li class="submenu__item"><a class="submenu__link" href="#">Подводка воды от скважины в дом воды от скважины в дом</a></li>
+              </ul>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#">О компании</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Проекты</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__contacts header-contacts">
+          <div class="header-contacts__socials socials"><a class="socials__item" href="#"><img src="img/icons/socials/01.svg" alt=""></a><a class="socials__item" href="#"><img src="img/icons/socials/02.svg" alt=""></a></div>
+          <div class="header-contacts__info contacts-info"><a class="contacts-info__phone" href="tel:+78123170720">8 812 317-07-20</a><a class="contacts-info__mail" href="mailto:info@spb-skvazhina.ru">info@spb-skvazhina.ru</a></div>
+        </div>
+      </div>
+    </header>
+    <div class="b01">
+      <div class="b01__container container">
+        <div class="b01__box">
+          <h1 class="b01__title">Рассчитайте стоимость бурения скважины на вашем участке «под ключ» всего за 2 минуты!</h1>
+          <div class="b01__descr">
+            <p>Ответьте всего на 5 вопросов и получите гарантированную<br> <span>скидку 10 000 рублей</span> на бурение скважины</p>
+          </div>
+          <button class="b01__button btn">Рассчитать стоимость</button>
+        </div>
+      </div>
+    </div>
+    <div class="b02">
+      <div class="b02__container container">
+        <h2 class="b02__title b-title">Ежегодно бурим 270+ скважин для жителей Ленинградской области</h2>
+        <div class="b02__box"><img class="b02__img" src="img/content/b02.jpg" alt="">
+          <div class="b02__adv b02-adv">
+            <div class="b02-adv__item">
+              <div class="b02-adv__title">Фиксированная стоимость</div>
+              <div class="b02-adv__descr">Фиксированная стоимость бурения до начала работ, никаких скрытых условий</div>
+            </div>
+            <div class="b02-adv__item">
+              <div class="b02-adv__title">10+ лет опыта</div>
+              <div class="b02-adv__descr">Мастера с опытом более 10 лет, способны справиться с самой сложной задачей</div>
+            </div>
+            <div class="b02-adv__item">
+              <div class="b02-adv__title">14 буровых установок</div>
+              <div class="b02-adv__descr">14 буровых установок. Уже завтра сможем заехать к вам на участок</div>
+            </div>
+            <div class="b02-adv__item">
+              <div class="b02-adv__title">Cовременная техника</div>
+              <div class="b02-adv__descr">Cовременная техника, способная решить любую задачу</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b03">
+      <div class="b03__container container">
+        <h2 class="b03__title b-title">Наши услуги</h2>
+        <div class="b03__box"><a class="b03__item b03-item" href="#" style="background-image: url('img/content/b03.jpg');">
+            <div class="b03-item__title">Бурение скважины на песок</div></a><a class="b03__item b03-item" href="#" style="background-image: url('img/content/b03.jpg');">
+            <div class="b03-item__title">Бурение артезианской скважины</div></a><a class="b03__item b03-item" href="#" style="background-image: url('img/content/b03.jpg');">
+            <div class="b03-item__title">Бурение скважины «под ключ»</div></a><a class="b03__item b03-item" href="#" style="background-image: url('img/content/b03.jpg');">
+            <div class="b03-item__title">Промывка (прочистка) скважины</div></a><a class="b03__item b03-item" href="#" style="background-image: url('img/content/b03.jpg');">
+            <div class="b03-item__title">Подводка воды от скважины в дом</div></a></div>
+      </div>
+    </div>
+    <div class="b04">
+      <div class="b04__container container">
+        <div class="b04__box">
+          <form class="quiz form" action="">
+            <div class="quiz__header quiz-header">
+              <h3 class="quiz-header__title">Рассчитайте стоимость бурения скважины за 2 минуты</h3>
+              <div class="quiz-header__counter quiz-counter"><span class="quiz-counter__current">1 </span>&nbsp;/&nbsp;<span class="quiz-counter__length">7 </span></div>
+            </div>
+            <div class="quiz__middle quiz-slider">
+              <fieldset class="quiz-slider__item quiz-slide quiz-slide--img">
+                <legend class="quiz-slide__title">Какая услуга вас интересует?</legend>
+                <div class="quiz-slide__grid quiz-grid">
+                  <label class="quiz-slide__item">
+                    <input class="quiz-slide__radio" type="radio" name="answer-01" value="Бурение скважины Под ключ">
+                    <div class="quiz-slide__img"><img src="img/content/quiz/01.jpg" alt=""></div>Бурение скважины Под ключ
+                  </label>
+                  <label class="quiz-slide__item">
+                    <input class="quiz-slide__radio" type="radio" name="answer-01" value="Простое бурение скважины">
+                    <div class="quiz-slide__img"><img src="img/content/quiz/02.png" alt=""></div>Простое бурение скважины
+                  </label>
+                  <label class="quiz-slide__item">
+                    <input class="quiz-slide__radio" type="radio" name="answer-01" value="Ремонт или промывка скважины">
+                    <div class="quiz-slide__img"><img src="img/content/quiz/03.png" alt=""></div>Ремонт или промывка скважины
+                  </label>
+                  <label class="quiz-slide__item">
+                    <input class="quiz-slide__radio" type="radio" name="answer-01" value="Обустройство скважины, подводка к дому">
+                    <div class="quiz-slide__img"><img src="img/content/quiz/04.png" alt=""></div>Обустройство скважины, подводка к дому
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset class="quiz-slider__item quiz-slide">
+                <legend class="quiz-slide__title">На участке имеется электричество?</legend>
+                <label class="quiz-slide__label label-radio">
+                  <input class="quiz-slide__radio" type="radio" name="answer-02" value="Имеется, до 5 кВт.">Имеется, до 5 кВт.
+                </label>
+                <label class="quiz-slide__label label-radio">
+                  <input class="quiz-slide__radio" type="radio" name="answer-02" value="Имеется, свыше 5 кВт.">Имеется, свыше 5 кВт.
+                </label>
+                <label class="quiz-slide__label label-radio">
+                  <input class="quiz-slide__radio" type="radio" name="answer-02" value="Электричества нет.">Электричества нет.
+                </label>
+                <label class="quiz-slide__label label-radio">
+                  <input class="quiz-slide__radio" type="radio" name="answer-02" value="Затрудняюсь ответить">Затрудняюсь ответить
+                </label>
+              </fieldset>
+              <fieldset class="quiz-slider__item quiz-slide">
+                <legend class="quiz-slide__title">Наличие источников технической воды вблизи места работы.</legend>
+                <label class="quiz-slide__label label-radio">
+                  <input class="quiz-slide__radio" type="radio" name="answer-03" value="Канава">Канава
+                </label>
+                <label class="quiz-slide__label label-radio">
+                  <input class="quiz-slide__radio" type="radio" name="answer-03" value="Пруд">Пруд
+                </label>
+                <label class="quiz-slide__label label-radio">
+                  <input class="quiz-slide__radio" type="radio" name="answer-03" value="Источника технической воды нет">Источника технической воды нет
+                </label>
+                <label class="quiz-slide__label label-radio">
+                  <input class="quiz-slide__radio" type="radio" name="answer-03" value="Речка">Речка
+                </label>
+                <label class="quiz-slide__label label-radio">
+                  <input class="quiz-slide__radio" type="radio" name="answer-03" value="Соседский колодец/скважина">Соседский колодец/скважина
+                </label>
+                <label class="quiz-slide__label label-radio">
+                  <input class="quiz-slide__radio" type="radio" name="answer-03" value="Затрудняюсь ответить">Затрудняюсь ответить
+                </label>
+              </fieldset>
+              <fieldset class="quiz-slider__item quiz-slide">
+                <legend class="quiz-slide__title">Наличие источников технической воды вблизи места работы.</legend>
+                <label class="quiz-slide__label label-checkbox">
+                  <input class="quiz-slide__checkbox" type="checkbox" name="answer-04-01" value="Затрудняюсь ответить">Затрудняюсь ответить
+                </label>
+                <label class="quiz-slide__label label-checkbox">
+                  <input class="quiz-slide__checkbox" type="checkbox" name="answer-04-02" value="Песок">Песок
+                </label>
+                <label class="quiz-slide__label label-checkbox">
+                  <input class="quiz-slide__checkbox" type="checkbox" name="answer-04-03" value="Известняк">Известняк
+                </label>
+                <label class="quiz-slide__label label-checkbox">
+                  <input class="quiz-slide__checkbox" type="checkbox" name="answer-04-04" value="Глина">Глина
+                </label>
+                <label class="quiz-slide__label label-checkbox">
+                  <input class="quiz-slide__checkbox" type="checkbox" name="answer-04-05" value="Бут">Бут
+                </label>
+              </fieldset>
+              <fieldset class="quiz-slider__item quiz-slide">
+                <legend class="quiz-slide__title">Когда вы хотите приступить к работам?</legend>
+                <label class="quiz-slide__label label-radio toggle">
+                  <input class="quiz-slide__radio" type="radio" name="answer-05" value="В ближайшее время">В ближайшее время
+                </label>
+                <label class="quiz-slide__label label-radio">
+                  <input class="quiz-slide__radio" type="radio" name="answer-05" value="В течении месяца">В течении месяца
+                </label>
+                <label class="quiz-slide__label label-radio">
+                  <input class="quiz-slide__radio" type="radio" name="answer-05" value="В течении нескольких месяцев">В течении нескольких месяцев
+                </label>
+                <label class="quiz-slide__label label-radio">
+                  <input class="quiz-slide__radio" type="radio" name="answer-05" value="Пока не знаю">Пока не знаю
+                </label>
+              </fieldset>
+              <fieldset class="quiz-slider__item quiz-slide">
+                <legend class="quiz-slide__title">Укажите ваш населенный пункт?</legend>
+                <label class="quiz-slide__label-text">Не обязательно для заполнения</label>
+                <input class="quiz-slide__input" type="text" name="answer-06" placeholder="Название">
+              </fieldset>
+              <fieldset class="quiz-slider__item quiz-slide">
+                <legend class="quiz-slide__title">Сейчас мы проанализируем ваши ответы и сделаем примерный расчет стоимости. Ваша персональная скидка, будет закреплена за вашим номером телефона.</legend>
+                <label class="quiz-slide__label-text">Введите имя</label>
+                <input class="quiz-slide__input" type="text" name="answer-07-01" placeholder="Имя">
+                <label class="quiz-slide__label-text">Введите номер телефона</label>
+                <input class="quiz-slide__input form__phone" type="tel" name="answer-07-02" placeholder="Телефон">
+              </fieldset>
+            </div>
+            <div class="quiz__footer quiz-footer">
+              <div class="quiz__btn quiz-btn quiz-btn__prev btn">Назад</div>
+              <div class="quiz__btn quiz-btn quiz-btn__next btn">Вперед</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="b05">
+      <div class="b05__container container">
+        <h2 class="b05__title b-title">5 простых шагов к чистой питьевой воде на вашем участке</h2>
+        <ol class="b05__box">
+          <li class="b05__item b05-item">
+            <div class="b05-item__title">Консультируем и даем предварительный расчет</div>
+            <div class="b05-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
+          </li>
+          <li class="b05__item b05-item">
+            <div class="b05-item__title">Выезд специалиста к вам на участок</div>
+            <div class="b05-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
+          </li>
+          <li class="b05__item b05-item">
+            <div class="b05-item__title">Подписание договора с гарантиями</div>
+            <div class="b05-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
+          </li>
+          <li class="b05__item b05-item">
+            <div class="b05-item__title">Выполнение работ</div>
+            <div class="b05-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
+          </li>
+          <li class="b05__item b05-item">
+            <div class="b05-item__title">Выдача документов качества</div>
+            <div class="b05-item__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore1</div>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="b06">
+      <div class="b06__container container">
+        <div class="b06__box b06-box">
+          <div class="b06-box__left">
+            <h2 class="b06__title b-title">У вас остались вопросы?</h2>
+            <p>Оставьте заявку на беслатную консультацию и наши специалисты свяжутся с вами в течении 15 минут</p>
+            <form class="help__form form" action="#" method="post">
+              <div class="input-wrapper">
+                <input class="form__name" type="text" name="name" placeholder="Имя">
+              </div>
+              <div class="input-wrapper">
+                <input class="form__phone" type="tel" name="phone" placeholder="Номер телефона">
+              </div>
+              <button class="form__btn btn" type="submit">Отправить</button>
+              <div class="input-wrapper agreement">
+                <label class="agreement__label" for="agreement">
+                  <input class="form__agreement" id="agreement" name="agreement" type="checkbox" required="" checked="">Я принимаю условия&nbsp;<a href="#">политики конфиденцианольности</a>
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="b06-box__right"><img src="img/content/b06.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="b07 pt0">
+      <div class="b07__container container">
+        <div class="b07__box b07-box">
+          <div class="b07-box__item b07-item">
+            <div class="b07-item__digit">14</div>
+            <div class="b07-item__box">
+              <div class="b07-item__title">буровых установок</div>
+              <div class="b07-item__descr">ежедневно трудятся на участках ваших соседей</div>
+            </div>
+          </div>
+          <div class="b07-box__item b07-item">
+            <div class="b07-item__digit">264+</div>
+            <div class="b07-item__box">
+              <div class="b07-item__title">скважины</div>
+              <div class="b07-item__descr">ежегодно выполняет наша компания на участках Ленинградской обсласти</div>
+            </div>
+          </div>
+          <div class="b07-box__item b07-item">
+            <div class="b07-item__digit">100%</div>
+            <div class="b07-item__box">
+              <div class="b07-item__title">наших клиентов</div>
+              <div class="b07-item__descr">довольны качеством услуг выполненных нашей компанией</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b08 pt0">
+      <div class="b08__container container">
+        <h2 class="b08__title b-title">Фото с наших объектов</h2>
+        <div class="b08__slider b08-slider b08-slider-js swiper">
+          <div class="b08-slider__wrapper swiper-wrapper"><a class="b08-slider__item swiper-slide" href="img/content/slider/01.jpg" data-fslightbox="slider"><img class="b08-slider__img" src="img/content/slider/01-min.jpg" alt=""></a><a class="b08-slider__item swiper-slide" href="img/content/slider/02.jpg" data-fslightbox="slider"><img class="b08-slider__img" src="img/content/slider/02-min.jpg" alt=""></a><a class="b08-slider__item swiper-slide" href="img/content/slider/04.jpg" data-fslightbox="slider"><img class="b08-slider__img" src="img/content/slider/04-min.jpg" alt=""></a><a class="b08-slider__item swiper-slide" href="img/content/slider/03.jpg" data-fslightbox="slider"><img class="b08-slider__img" src="img/content/slider/03-min.jpg" alt=""></a><a class="b08-slider__item swiper-slide" href="img/content/slider/01.jpg" data-fslightbox="slider"><img class="b08-slider__img" src="img/content/slider/01-min.jpg" alt=""></a><a class="b08-slider__item swiper-slide" href="img/content/slider/02.jpg" data-fslightbox="slider"><img class="b08-slider__img" src="img/content/slider/02-min.jpg" alt=""></a><a class="b08-slider__item swiper-slide" href="img/content/slider/04.jpg" data-fslightbox="slider"><img class="b08-slider__img" src="img/content/slider/04-min.jpg" alt=""></a><a class="b08-slider__item swiper-slide" href="img/content/slider/03.jpg" data-fslightbox="slider"><img class="b08-slider__img" src="img/content/slider/03-min.jpg" alt=""></a></div>
+          <div class="b08-slider__prev swiper__prev"></div>
+          <div class="b08-slider__next swiper__next"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__container container">
+        <div class="footer__left"><img class="footer__logo" src="img/icons/footer/photo.svg" alt="">
+          <p>Бурение скважин в Санкт-Петербурге и Ленинградской области</p>
+          <p> <a href="#">Cогласие на обработку персональных данных</a></p>
+        </div>
+        <div class="footer__right"><a class="footer__phone" href="tel:+78123170720">8 812 317-07-20</a><a class="footer__mail" href="#">info@spb-skvazhina.ru</a><a class="footer__whatsapp" href="https://api.whatsapp.com/send?phone=78123170720&amp;text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%B1%D1%83%D1%80%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%BA%D0%B2%D0%B0%D0%B6%D0%B8%D0%BD%D1%8B">Написать в WhatsApp</a><a class="footer__telegram" href="https://t.me/spb_aquaterra">Написать в Telegram</a></div>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <div class="mobile-menu__wrapper">
+        <div class="socials"><a class="socials__item" href="#"><img src="img/icons/socials/01.svg" alt=""></a><a class="socials__item" href="#"><img src="img/icons/socials/02.svg" alt=""></a></div>
+        <div class="contacts-info"><a class="contacts-info__mail" href="mailto:info@spb-skvazhina.ru">info@spb-skvazhina.ru</a></div>
       </div>
     </div>
   </body>
