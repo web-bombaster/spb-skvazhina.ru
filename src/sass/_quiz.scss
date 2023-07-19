@@ -6,6 +6,10 @@
     overflow: hidden;
 
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+
+    label {
+        cursor: pointer;
+    }
 }
 .quiz__header {
 }
@@ -204,5 +208,12 @@
 .label-checkbox {
     &::before {
         // border-radius: 50%;
+    }
+
+    &.toggle::after {
+        background-image: url('../img/yes.svg');
+        background-size: cover;
+        background-position: center;
+        background-color: var(--color-01);
     }
 }
