@@ -60,3 +60,13 @@
 		background-color: #FF7043;
 	}
 }
+
+.btn-light {
+	background-color: #fff;
+	color: var(--color-text);
+	
+	&:hover:not(:disabled) {
+		background-color: #fff;
+		color: var(--color-text);
+	}
+}

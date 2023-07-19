@@ -1,0 +1,45 @@
+.swiper__prev, .swiper__next {
+	position: absolute;
+	top: -95px;
+	height: 4rem;
+	width: 4rem;
+
+	background-image: url('../img/arrow-slider.svg');
+	background-size: cover;
+	background-position: center;
+
+	z-index: 1;
+	cursor: pointer;
+
+	@media screen and (max-width: $break_md) {
+		top: initial;
+		bottom: 0;
+	}
+
+	@media screen and (max-width: $break_sm) {
+		height: 3.2rem;
+		width: 3.2rem;
+	}
+}
+
+.swiper__prev {
+	right: 50px;
+	transform: rotate(180deg);
+
+	@media screen and (max-width: $break_md) {
+		right: initial;
+	}
+}
+
+.swiper__next {
+	right: 0;
+	@media screen and (max-width: $break_md) {
+		right: initial;
+		left: 40px;
+	}
+}
+
+.swiper-button-disabled {
+	opacity: .4;
+	cursor: auto;
+}

@@ -1,0 +1,24 @@
+.hidden {
+	display: none;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.pt0 {
+	padding-top: 0;
+}
+
+.pb0 {
+	padding-bottom: 0;
+}
+
+.visually-hidden {
+	position: fixed;
+	transform: scale(0);
+}
+
+.text-center {
+	text-align: center;
+}

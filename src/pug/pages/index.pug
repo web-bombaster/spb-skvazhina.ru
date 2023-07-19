@@ -3,8 +3,12 @@
 include ../includes/mixins
 
 //- Для pageType указать тип страницы
-- var pageType = 'home';
+- var pageType = 'service';
 
+
+//- service - страница услуги
+if pageType === 'service'
+	include service
 
 //- home - главная страница
 if pageType === 'home'
