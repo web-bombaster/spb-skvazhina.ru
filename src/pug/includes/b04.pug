@@ -2,7 +2,7 @@
 	.b04__container.container
 		//- h2.b04__title.b-title Рассчитайте стоимость бурения скважины за 2 минуты
 		.b04__box
-			form(action="").quiz.form
+			form().quiz.form
 				.quiz__header.quiz-header
 					h3.quiz-header__title Рассчитайте стоимость бурения скважины за 2 минуты
 					.quiz-header__counter.quiz-counter
@@ -149,14 +149,20 @@
 
 								label.quiz-slide__label-text
 									| Введите имя
-								input(type="text" name="answer-07-01" placeholder="Имя" required).quiz-slide__input
+								input(type="text" name="answer-07-01" placeholder="Имя" minlength="3" maxlength="20" required).quiz-slide__input
 
 								label.quiz-slide__label-text
 									| Введите номер телефона
-								input(type="tel" name="answer-07-02" placeholder="Телефон").quiz-slide__input.form__phone
+								input(type="tel" name="answer-07-02" placeholder="Телефон" required).quiz-slide__input.form__phone
+
+								.input-wrapper.agreement
+									label(for='agreement').agreement__label
+										input#agreement.form__agreement(name='agreement' type='checkbox' required='' checked='')
+										| Я принимаю условия&nbsp;
+										a(href='#') политики конфиденцианольности
 
 
 				.quiz__footer.quiz-footer
 					.quiz__btn.quiz-btn.quiz-btn__prev.btn Назад
 					.quiz__btn.quiz-btn.quiz-btn__next.btn Вперед
-					.quiz-btn.quiz-btn__send.btn(type="submit") Отправить
+					button.quiz-btn.quiz-btn__send.btn(type="submit") Отправить
