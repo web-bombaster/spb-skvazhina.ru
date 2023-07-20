@@ -92,8 +92,127 @@
     </div>
     <div class="b04">
       <div class="b04__container container">
-        <h2 class="b04__title b-title">Рассчитайте стоимость бурения скважины за 2 минуты</h2>
-        <div class="b04__box"></div>
+        <div class="b04__box">
+          <form class="quiz form" action="">
+            <div class="quiz__header quiz-header">
+              <h3 class="quiz-header__title">Рассчитайте стоимость бурения скважины за 2 минуты</h3>
+              <div class="quiz-header__counter quiz-counter"></div>
+            </div>
+            <div class="quiz__middle">
+              <div class="quiz-slider swiper">
+                <div class="quiz-slider__wrapper swiper-wrapper">
+                  <fieldset class="quiz-slider__item quiz-slide swiper-slide quiz-slide--img">
+                    <legend class="quiz-slide__title">Какая услуга вас интересует?</legend>
+                    <div class="quiz-slide__grid quiz-grid">
+                      <label class="quiz-slide__item">
+                        <input class="quiz-slide__radio" type="radio" name="answer-01" value="Бурение скважины Под ключ" checked>
+                        <div class="quiz-slide__img"><img src="img/content/quiz/01.jpg" alt=""></div>Бурение скважины Под ключ
+                      </label>
+                      <label class="quiz-slide__item">
+                        <input class="quiz-slide__radio" type="radio" name="answer-01" value="Простое бурение скважины">
+                        <div class="quiz-slide__img"><img src="img/content/quiz/02.png" alt=""></div>Простое бурение скважины
+                      </label>
+                      <label class="quiz-slide__item">
+                        <input class="quiz-slide__radio" type="radio" name="answer-01" value="Ремонт или промывка скважины">
+                        <div class="quiz-slide__img"><img src="img/content/quiz/03.png" alt=""></div>Ремонт или промывка скважины
+                      </label>
+                      <label class="quiz-slide__item">
+                        <input class="quiz-slide__radio" type="radio" name="answer-01" value="Обустройство скважины, подводка к дому">
+                        <div class="quiz-slide__img"><img src="img/content/quiz/04.png" alt=""></div>Обустройство скважины, подводка к дому
+                      </label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="quiz-slider__item quiz-slide swiper-slide">
+                    <legend class="quiz-slide__title">На участке имеется электричество?</legend>
+                    <label class="quiz-slide__label label-radio toggle">
+                      <input class="quiz-slide__radio" type="radio" name="answer-02" value="Имеется, до 5 кВт." checked>Имеется, до 5 кВт.
+                    </label>
+                    <label class="quiz-slide__label label-radio">
+                      <input class="quiz-slide__radio" type="radio" name="answer-02" value="Имеется, свыше 5 кВт.">Имеется, свыше 5 кВт.
+                    </label>
+                    <label class="quiz-slide__label label-radio">
+                      <input class="quiz-slide__radio" type="radio" name="answer-02" value="Электричества нет.">Электричества нет.
+                    </label>
+                    <label class="quiz-slide__label label-radio">
+                      <input class="quiz-slide__radio" type="radio" name="answer-02" value="Затрудняюсь ответить">Затрудняюсь ответить
+                    </label>
+                  </fieldset>
+                  <fieldset class="quiz-slider__item quiz-slide swiper-slide">
+                    <legend class="quiz-slide__title">Наличие источников технической воды вблизи места работы.</legend>
+                    <label class="quiz-slide__label label-radio toggle">
+                      <input class="quiz-slide__radio" type="radio" name="answer-03" value="Канава" checked>Канава
+                    </label>
+                    <label class="quiz-slide__label label-radio">
+                      <input class="quiz-slide__radio" type="radio" name="answer-03" value="Пруд">Пруд
+                    </label>
+                    <label class="quiz-slide__label label-radio">
+                      <input class="quiz-slide__radio" type="radio" name="answer-03" value="Источника технической воды нет">Источника технической воды нет
+                    </label>
+                    <label class="quiz-slide__label label-radio">
+                      <input class="quiz-slide__radio" type="radio" name="answer-03" value="Речка">Речка
+                    </label>
+                    <label class="quiz-slide__label label-radio">
+                      <input class="quiz-slide__radio" type="radio" name="answer-03" value="Соседский колодец/скважина">Соседский колодец/скважина
+                    </label>
+                    <label class="quiz-slide__label label-radio">
+                      <input class="quiz-slide__radio" type="radio" name="answer-03" value="Затрудняюсь ответить">Затрудняюсь ответить
+                    </label>
+                  </fieldset>
+                  <fieldset class="quiz-slider__item quiz-slide swiper-slide">
+                    <legend class="quiz-slide__title">Знаете ли вы, какой грунт на вашем участке?</legend>
+                    <label class="quiz-slide__label label-checkbox toggle">
+                      <input class="quiz-slide__checkbox" type="checkbox" name="answer-04-01" value="Затрудняюсь ответить" checked>Затрудняюсь ответить
+                    </label>
+                    <label class="quiz-slide__label label-checkbox">
+                      <input class="quiz-slide__checkbox" type="checkbox" name="answer-04-02" value="Песок">Песок
+                    </label>
+                    <label class="quiz-slide__label label-checkbox">
+                      <input class="quiz-slide__checkbox" type="checkbox" name="answer-04-03" value="Известняк">Известняк
+                    </label>
+                    <label class="quiz-slide__label label-checkbox">
+                      <input class="quiz-slide__checkbox" type="checkbox" name="answer-04-04" value="Глина">Глина
+                    </label>
+                    <label class="quiz-slide__label label-checkbox">
+                      <input class="quiz-slide__checkbox" type="checkbox" name="answer-04-05" value="Бут">Бут
+                    </label>
+                  </fieldset>
+                  <fieldset class="quiz-slider__item quiz-slide swiper-slide">
+                    <legend class="quiz-slide__title">Когда вы хотите приступить к работам?</legend>
+                    <label class="quiz-slide__label label-radio toggle">
+                      <input class="quiz-slide__radio" type="radio" name="answer-05" value="В ближайшее время" checked>В ближайшее время
+                    </label>
+                    <label class="quiz-slide__label label-radio">
+                      <input class="quiz-slide__radio" type="radio" name="answer-05" value="В течении месяца">В течении месяца
+                    </label>
+                    <label class="quiz-slide__label label-radio">
+                      <input class="quiz-slide__radio" type="radio" name="answer-05" value="В течении нескольких месяцев">В течении нескольких месяцев
+                    </label>
+                    <label class="quiz-slide__label label-radio">
+                      <input class="quiz-slide__radio" type="radio" name="answer-05" value="Пока не знаю">Пока не знаю
+                    </label>
+                  </fieldset>
+                  <fieldset class="quiz-slider__item quiz-slide swiper-slide">
+                    <legend class="quiz-slide__title">Укажите ваш населенный пункт?</legend>
+                    <label class="quiz-slide__label-text">Не обязательно для заполнения</label>
+                    <input class="quiz-slide__input" type="text" name="answer-06" placeholder="Название">
+                  </fieldset>
+                  <fieldset class="quiz-slider__item quiz-slide swiper-slide">
+                    <legend class="quiz-slide__title">Сейчас мы проанализируем ваши ответы и сделаем примерный расчет стоимости. Ваша персональная скидка, будет закреплена за вашим номером телефона.</legend>
+                    <label class="quiz-slide__label-text">Введите имя</label>
+                    <input class="quiz-slide__input" type="text" name="answer-07-01" placeholder="Имя" required>
+                    <label class="quiz-slide__label-text">Введите номер телефона</label>
+                    <input class="quiz-slide__input form__phone" type="tel" name="answer-07-02" placeholder="Телефон">
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+            <div class="quiz__footer quiz-footer">
+              <div class="quiz__btn quiz-btn quiz-btn__prev btn">Назад</div>
+              <div class="quiz__btn quiz-btn quiz-btn__next btn">Вперед</div>
+              <div class="quiz-btn quiz-btn__send btn" type="submit">Отправить</div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <div class="b05">

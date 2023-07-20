@@ -1,14 +1,53 @@
 .quiz {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
 
     border-radius: var(--brs);
     overflow: hidden;
 
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 
+    &.form {
+        display: block;
+
+        input, textarea {
+            max-width: 98%;
+        }
+    }
+
     label {
         cursor: pointer;
+    }
+
+    .quiz-counter {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    
+        display: inline-flex;
+        align-items: center;        
+        flex-shrink: 0;
+
+        width: auto;
+        left: auto;
+        bottom: auto;
+
+        font-weight: 500;
+        color: var(--color-01);
+    
+        background-color: #f5f5f5;
+        padding: 5px 8px;
+        border-radius: var(--brs);
+    
+    
+        @media screen and (max-width: $break_sm) {
+            right: auto;
+            left: 15px;
+            bottom: 25px;
+            top: auto;
+            transform: none;
+        }
     }
 }
 .quiz__header {
@@ -28,19 +67,23 @@
     margin: 0;
 }
 .quiz__middle {
+    padding: 25px 15px;
 }
 .quiz-slider {
     padding-top: 25px;
     padding-bottom: 25px;
+
 }
 .quiz-slider__item {
 }
 .quiz-slide {
     display: block;
-    padding: 15px;
-
+    padding: 0;
+    
     border: none;
+    background-color: #fff;
     overflow: hidden;
+    
 }
 .quiz-grid {
     display: grid;
@@ -67,7 +110,7 @@
     }
 }
 .quiz-slide__title {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 
     position: relative;
     display: block;
@@ -129,33 +172,13 @@
     }
 }
 
+.quiz-btn__send {
+    display: none;
+}
+
 .quiz-header__counter {
 }
-.quiz-counter {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
 
-    display: inline-flex;
-    align-items: center;
-    flex-shrink: 0;
-    font-weight: 500;
-
-    background-color: #f5f5f5;
-    padding: 5px 8px;
-    border-radius: var(--brs);
-
-    color: var(--color-01);
-
-    @media screen and (max-width: $break_sm) {
-        right: auto;
-        left: 15px;
-        bottom: 25px;
-        top: auto;
-        transform: none;
-    }
-}
 .quiz-counter__current {
 }
 .quiz-counter__length {
@@ -216,4 +239,9 @@
         background-position: center;
         background-color: var(--color-01);
     }
+}
+
+.quiz-slide__label-text {
+    display: block;
+    margin-bottom: 8px;
 }

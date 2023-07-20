@@ -4,14 +4,14 @@ let quizInit = function () {
 
     document.addEventListener('click', function(e) {
         // Переключение checkbox
-        if (e.target.classList.contains(labelCheckbox)) {
+        if (e.target.closest('.label-checkbox')) {
             e.target.classList.toggle('toggle');
         };
 
         // Переключение radio
-        if (e.target.classList.contains(labelRadio)) {
+        if (e.target.closest('.label-radio')) {
             if (!e.target.classList.contains('toggle')) {
-                let radioName = e.target.firstElementChild.getAttribute('name');
+                let radioName = e.target.closest('.label-radio').firstElementChild.getAttribute('name');
                 let elems = document.querySelectorAll(`[name="${radioName}"]`);
                 elems.forEach(function(element) {
                     element.parentElement.classList.remove('toggle');
