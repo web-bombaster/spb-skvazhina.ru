@@ -93,7 +93,7 @@
     <div class="b04">
       <div class="b04__container container">
         <div class="b04__box">
-          <form class="quiz form" action="">
+          <form class="quiz form">
             <div class="quiz__header quiz-header">
               <h3 class="quiz-header__title">Рассчитайте стоимость бурения скважины за 2 минуты</h3>
               <div class="quiz-header__counter quiz-counter"></div>
@@ -199,9 +199,14 @@
                   <fieldset class="quiz-slider__item quiz-slide swiper-slide">
                     <legend class="quiz-slide__title">Сейчас мы проанализируем ваши ответы и сделаем примерный расчет стоимости. Ваша персональная скидка, будет закреплена за вашим номером телефона.</legend>
                     <label class="quiz-slide__label-text">Введите имя</label>
-                    <input class="quiz-slide__input" type="text" name="answer-07-01" placeholder="Имя" required>
+                    <input class="quiz-slide__input" type="text" name="answer-07-01" placeholder="Имя" minlength="3" maxlength="20" required>
                     <label class="quiz-slide__label-text">Введите номер телефона</label>
-                    <input class="quiz-slide__input form__phone" type="tel" name="answer-07-02" placeholder="Телефон">
+                    <input class="quiz-slide__input form__phone" type="tel" name="answer-07-02" placeholder="Телефон" required>
+                    <div class="input-wrapper agreement">
+                      <label class="agreement__label" for="agreement">
+                        <input class="form__agreement" id="agreement" name="agreement" type="checkbox" required="" checked="">Я принимаю условия&nbsp;<a href="#">политики конфиденцианольности</a>
+                      </label>
+                    </div>
                   </fieldset>
                 </div>
               </div>
@@ -209,7 +214,7 @@
             <div class="quiz__footer quiz-footer">
               <div class="quiz__btn quiz-btn quiz-btn__prev btn">Назад</div>
               <div class="quiz__btn quiz-btn quiz-btn__next btn">Вперед</div>
-              <div class="quiz-btn quiz-btn__send btn" type="submit">Отправить</div>
+              <button class="quiz-btn quiz-btn__send btn" type="submit">Отправить</button>
             </div>
           </form>
         </div>
