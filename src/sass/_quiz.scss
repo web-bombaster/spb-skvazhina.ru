@@ -67,7 +67,26 @@
     margin: 0;
 }
 .quiz__middle {
+    position: relative;
     padding: 25px 15px;
+
+    &.toggle {
+        &::before {
+            content: 'Данные успешно отправлены!';
+            position: absolute;
+            inset: 0;
+            background-color: #fff;
+            z-index: 2;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
 }
 .quiz-slider {
     padding-top: 25px;
@@ -249,6 +268,7 @@
 // input:invalid {
 //     border: 2px solid red;
 // }
+
   
 // input:valid {
 //     border: 2px solid green;

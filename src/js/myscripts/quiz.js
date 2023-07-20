@@ -26,4 +26,16 @@ let quizInit = function () {
 
 quizInit();
 
+const quizSending = function() {
+    let quizForm = document.querySelector('.quiz.form');
+    if (quizForm) {
+        quizForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.querySelector('.quiz__middle').classList.add('toggle');
+            quizForm.reset();
+        });
+    }
+};
+
+quizSending();
 
